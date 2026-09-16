@@ -14,10 +14,14 @@
 
   <meta
     name="description"
-    content="間取り・収納・家具配置・内装・照明・電気図まで、二級建築士が12週間オンラインで伴走。設計経験800棟以上の漆間絵美が、家づくりの判断を一つの方向へ整えます。"
+    content="間取り・収納・家具配置・内装・照明・電気図まで、二級建築士が12週間オンラインで伴走。設計経験800棟以上の漆間絵美が、家づくりの判断を一つの方向へ整えます。220,000円（税込）・全国対応。"
   >
 
-  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta
+    name="robots"
+    content="index,follow,max-image-preview:large"
+  >
+
   <meta name="author" content="BETTER HOME DESIGN">
   <meta name="theme-color" content="#163f46">
 
@@ -26,8 +30,18 @@
     href="https://emy-renovation.github.io/total-support/"
   >
 
+  <!-- OGP -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="BETTER HOME DESIGN">
+
+  <meta
+    property="og:site_name"
+    content="BETTER HOME DESIGN"
+  >
+
+  <meta
+    property="og:locale"
+    content="ja_JP"
+  >
 
   <meta
     property="og:title"
@@ -36,7 +50,7 @@
 
   <meta
     property="og:description"
-    content="決めるたびに迷う家づくりを、12週間、建築士と一緒に整えます。"
+    content="決めるたびに迷う家づくりを、12週間、二級建築士と一緒に整えます。"
   >
 
   <meta
@@ -50,11 +64,50 @@
   >
 
   <meta
+    property="og:image:secure_url"
+    content="https://emy-renovation.github.io/total-support/assets/og-total-support.jpg"
+  >
+
+  <meta
+    property="og:image:type"
+    content="image/jpeg"
+  >
+
+  <meta
+    property="og:image:width"
+    content="1200"
+  >
+
+  <meta
+    property="og:image:height"
+    content="630"
+  >
+
+  <meta
     property="og:image:alt"
     content="BETTER HOME DESIGN 家づくりトータル伴走サポート"
   >
 
-  <meta name="twitter:card" content="summary_large_image">
+  <!-- X -->
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  >
+
+  <meta
+    name="twitter:title"
+    content="間取りから内装・電気図まで｜家づくりトータル伴走サポート"
+  >
+
+  <meta
+    name="twitter:description"
+    content="決めるたびに迷う家づくりを、12週間、二級建築士と一緒に整えます。"
+  >
+
+  <meta
+    name="twitter:image"
+    content="https://emy-renovation.github.io/total-support/assets/og-total-support.jpg"
+  >
 
   <style>
     :root {
@@ -71,6 +124,7 @@
       --muted: #5e6b6f;
       --line: #d9e3e4;
       --white: #ffffff;
+      --danger-soft: #fbf5f2;
       --shadow: 0 22px 60px rgba(13, 46, 52, 0.13);
       --shadow-light: 0 10px 30px rgba(13, 46, 52, 0.08);
       --radius: 26px;
@@ -99,7 +153,6 @@
 
     body {
       margin: 0;
-      padding: 0;
       color: var(--ink);
       background: var(--white);
       font-family: var(--font);
@@ -108,15 +161,16 @@
       overflow-wrap: break-word;
     }
 
-    body.has-fixed-cta {
-      padding-bottom: 0;
-    }
-
     img {
       display: block;
       width: 100%;
       max-width: 100%;
       height: auto;
+    }
+
+    figure,
+    blockquote {
+      margin: 0;
     }
 
     a {
@@ -135,7 +189,7 @@
     }
 
     :focus-visible {
-      outline: 3px solid rgba(223, 189, 97, 0.85);
+      outline: 3px solid rgba(223, 189, 97, 0.88);
       outline-offset: 4px;
     }
 
@@ -174,7 +228,7 @@
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      margin-bottom: 11px;
+      margin: 0 0 11px;
       color: var(--gold);
       font-size: 11px;
       font-weight: 900;
@@ -281,6 +335,12 @@
       font-size: 12px;
     }
 
+    .text-link {
+      color: var(--brand-2);
+      font-size: 13px;
+      font-weight: 900;
+    }
+
     /* Header */
 
     .header {
@@ -322,7 +382,7 @@
     .nav {
       display: flex;
       align-items: center;
-      gap: 17px;
+      gap: 16px;
     }
 
     .nav a {
@@ -344,7 +404,7 @@
       border-radius: 999px;
     }
 
-    /* セカンドオピニオン経由バナー */
+    /* 相談済み顧客専用バナー */
 
     .transition-banner {
       padding: 14px 0;
@@ -398,8 +458,6 @@
     }
 
     .hero-grid {
-      position: relative;
-      z-index: 1;
       display: grid;
       grid-template-columns: 1.03fr 0.97fr;
       gap: 52px;
@@ -412,7 +470,7 @@
       gap: 8px;
       padding: 7px 13px;
       color: var(--brand);
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.92);
       border: 1px solid var(--line);
       border-radius: 999px;
       box-shadow: var(--shadow-light);
@@ -498,7 +556,7 @@
       position: absolute;
       right: -22px;
       bottom: 25px;
-      width: min(310px, 80%);
+      width: min(330px, 82%);
       padding: 22px;
       color: var(--white);
       background: rgba(13, 46, 52, 0.96);
@@ -567,6 +625,46 @@
       font-size: 9px;
     }
 
+    /* 安心案内 */
+
+    .safety {
+      padding: 48px 0;
+      background: var(--white);
+    }
+
+    .safety-box {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 22px;
+      align-items: center;
+      padding: 25px 29px;
+      background: var(--gold-light);
+      border: 1px solid rgba(167, 119, 39, 0.2);
+      border-radius: 23px;
+    }
+
+    .safety-label {
+      padding: 7px 13px;
+      color: var(--white);
+      background: var(--gold);
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 900;
+    }
+
+    .safety-copy h2 {
+      margin: 0 0 4px;
+      color: var(--brand);
+      font-size: 20px;
+      line-height: 1.5;
+    }
+
+    .safety-copy p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
     /* 共通カード */
 
     .concerns,
@@ -616,7 +714,7 @@
       font-size: 13px;
     }
 
-    /* Promise */
+    /* 得られる状態 */
 
     .promise {
       background: var(--white);
@@ -693,7 +791,8 @@
     }
 
     .proof-main,
-    .proof-side {
+    .proof-side,
+    .proof-grid article {
       overflow: hidden;
       background: var(--white);
       border: 1px solid var(--line);
@@ -704,13 +803,14 @@
     .proof-main img {
       aspect-ratio: 16 / 9;
       object-fit: contain;
-      background: #ffffff;
+      background: var(--white);
     }
 
-    .proof-side img {
+    .proof-side img,
+    .proof-grid img {
       aspect-ratio: 4 / 3;
       object-fit: contain;
-      background: #ffffff;
+      background: var(--white);
     }
 
     .proof-caption {
@@ -742,20 +842,6 @@
       gap: 24px;
     }
 
-    .proof-grid article {
-      overflow: hidden;
-      background: var(--white);
-      border: 1px solid var(--line);
-      border-radius: 25px;
-      box-shadow: var(--shadow-light);
-    }
-
-    .proof-grid img {
-      aspect-ratio: 4 / 3;
-      object-fit: contain;
-      background: #ffffff;
-    }
-
     /* パース */
 
     .renders {
@@ -764,7 +850,7 @@
 
     .render-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 16px;
     }
 
@@ -777,12 +863,13 @@
     }
 
     .render-card:first-child {
-      grid-column: span 2;
+      grid-column: 1 / -1;
     }
 
     .render-card img {
-      height: 100%;
-      min-height: 260px;
+      width: 100%;
+      min-height: 270px;
+      aspect-ratio: 16 / 9;
       object-fit: cover;
       transition: transform 0.3s ease;
     }
@@ -941,10 +1028,81 @@
       font-size: 12px;
     }
 
+    /* 対応回数 */
+
+    .limits {
+      background: var(--white);
+    }
+
+    .limits-box {
+      max-width: 940px;
+      margin-inline: auto;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 27px;
+      box-shadow: var(--shadow-light);
+    }
+
+    .limits-head {
+      padding: 29px 31px;
+      color: var(--white);
+      background: var(--brand);
+    }
+
+    .limits-head h2 {
+      margin: 0;
+      font-size: clamp(25px, 4vw, 36px);
+      line-height: 1.45;
+    }
+
+    .limits-head p {
+      margin: 10px 0 0;
+      color: rgba(255, 255, 255, 0.78);
+      font-size: 13px;
+    }
+
+    .limits-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--line);
+    }
+
+    .limit-item {
+      padding: 23px 25px;
+      background: var(--white);
+    }
+
+    .limit-item strong {
+      display: block;
+      color: var(--brand);
+      font-size: 15px;
+    }
+
+    .limit-item span {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .text-rule {
+      padding: 25px 29px;
+      color: var(--brand);
+      background: var(--gold-light);
+      font-size: 13px;
+    }
+
+    .text-rule strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
     /* お客様の声 */
 
     .voices {
-      background: var(--white);
+      background: var(--warm);
     }
 
     .voice-grid {
@@ -954,28 +1112,28 @@
     }
 
     .voice-card {
-      display: grid;
-      grid-template-columns: 0.78fr 1.22fr;
       overflow: hidden;
-      background: var(--sky);
+      background: var(--white);
       border: 1px solid var(--line);
       border-radius: 25px;
       box-shadow: var(--shadow-light);
     }
 
     .voice-image {
-      min-height: 330px;
-      overflow: hidden;
-      background: var(--white);
+      min-height: 300px;
+      padding: 12px;
+      background: var(--sky);
     }
 
     .voice-image img {
+      width: 100%;
       height: 100%;
+      max-height: 410px;
       object-fit: contain;
     }
 
     .voice-copy {
-      padding: 26px;
+      padding: 25px;
     }
 
     .voice-copy small {
@@ -992,7 +1150,6 @@
     }
 
     .voice-copy blockquote {
-      margin: 0;
       color: var(--muted);
       font-size: 13px;
     }
@@ -1001,6 +1158,70 @@
       margin: 14px 0 0;
       color: var(--muted);
       font-size: 10px;
+    }
+
+    /* 向いている方 */
+
+    .fit {
+      background: var(--white);
+    }
+
+    .fit-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 21px;
+    }
+
+    .fit-box {
+      padding: 29px;
+      border-radius: 23px;
+    }
+
+    .fit-box.good {
+      background: var(--brand-light);
+      border: 1px solid rgba(57, 116, 124, 0.2);
+    }
+
+    .fit-box.other {
+      background: var(--danger-soft);
+      border: 1px solid #eaded8;
+    }
+
+    .fit-box h3 {
+      margin: 0 0 15px;
+      color: var(--brand);
+      font-size: 21px;
+    }
+
+    .fit-list {
+      display: grid;
+      gap: 9px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .fit-list li {
+      position: relative;
+      padding-left: 27px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .good .fit-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: var(--brand-2);
+      font-weight: 900;
+    }
+
+    .other .fit-list li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+      font-weight: 900;
     }
 
     /* 料金 */
@@ -1029,7 +1250,7 @@
     }
 
     .price-card {
-      max-width: 820px;
+      max-width: 850px;
       margin: 0 auto;
       padding: 39px;
       color: var(--ink);
@@ -1121,7 +1342,7 @@
     }
 
     .price-action .button {
-      width: min(100%, 520px);
+      width: min(100%, 550px);
     }
 
     .price-action p {
@@ -1131,10 +1352,10 @@
     }
 
     .capacity {
-      max-width: 820px;
+      max-width: 850px;
       margin: 23px auto 0;
       padding: 14px 17px;
-      color: rgba(255, 255, 255, 0.84);
+      color: rgba(255, 255, 255, 0.86);
       background: rgba(255, 255, 255, 0.09);
       border: 1px solid rgba(255, 255, 255, 0.15);
       border-radius: 17px;
@@ -1142,7 +1363,7 @@
       text-align: center;
     }
 
-    /* 移行制度 */
+    /* 相談後の移行制度 */
 
     .upgrade {
       background: var(--gold-light);
@@ -1205,66 +1426,65 @@
       font-size: 13px;
     }
 
-    /* 他サービス */
+    /* 小さく始める選択肢 */
 
-    .alternatives {
+    .starter {
       background: var(--white);
     }
 
-    .alternative-grid {
+    .starter-box {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .alternative-card {
-      padding: 25px;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+      max-width: 920px;
+      margin-inline: auto;
+      padding: 33px;
       background: var(--sky);
       border: 1px solid var(--line);
-      border-radius: 22px;
+      border-radius: 27px;
+      box-shadow: var(--shadow-light);
     }
 
-    .alternative-card small {
-      color: var(--gold);
-      font-size: 10px;
-      font-weight: 900;
-    }
-
-    .alternative-card h3 {
-      margin: 7px 0 4px;
-      color: var(--brand);
-      font-size: 19px;
-      line-height: 1.5;
-    }
-
-    .alternative-price {
-      margin: 0 0 10px;
-      color: var(--brand);
-      font-size: 21px;
-      font-weight: 900;
-    }
-
-    .alternative-card p,
-    .alternative-card li {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .alternative-card p {
+    .starter-copy h2 {
       margin: 0;
+      color: var(--brand);
+      font-size: clamp(25px, 4vw, 36px);
+      line-height: 1.45;
     }
 
-    .alternative-card ul {
+    .starter-copy p {
       margin: 12px 0 0;
-      padding-left: 19px;
+      color: var(--muted);
+      font-size: 13px;
     }
 
-    .alternative-card .text-link {
-      display: inline-block;
-      margin-top: 16px;
-      color: var(--brand-2);
-      font-size: 12px;
+    .starter-price {
+      min-width: 225px;
+      padding: 22px;
+      color: var(--white);
+      background: var(--brand);
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .starter-price small {
+      display: block;
+      color: #efd99e;
       font-weight: 900;
+    }
+
+    .starter-price strong {
+      display: block;
+      margin: 5px 0 13px;
+      font-size: 25px;
+    }
+
+    .starter-price .button {
+      width: 100%;
+      min-height: 48px;
+      padding: 10px 15px;
+      font-size: 12px;
     }
 
     /* プロフィール */
@@ -1410,7 +1630,7 @@
       font-weight: 900;
     }
 
-    /* Process */
+    /* 申込みの流れ */
 
     .process-grid {
       display: grid;
@@ -1502,7 +1722,7 @@
       font-weight: 900;
     }
 
-    /* Final CTA */
+    /* 最終CTA */
 
     .final {
       color: var(--white);
@@ -1575,6 +1795,8 @@
       color: rgba(255, 255, 255, 0.42);
     }
 
+    /* 固定CTA */
+
     .fixed-cta {
       display: none;
     }
@@ -1602,14 +1824,6 @@
       }
 
       .schedule-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .voice-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .alternative-grid {
         grid-template-columns: 1fr 1fr;
       }
     }
@@ -1699,7 +1913,6 @@
       }
 
       .hero-image {
-        aspect-ratio: 4 / 5;
         border-radius: 23px;
       }
 
@@ -1730,13 +1943,25 @@
         border-bottom: 0;
       }
 
+      .safety-box {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 22px;
+      }
+
+      .safety-label {
+        justify-self: start;
+      }
+
       .card-grid,
       .proof-grid,
       .render-grid,
       .schedule-grid,
       .deliverable-grid,
+      .limits-grid,
+      .voice-grid,
+      .fit-grid,
       .price-body,
-      .alternative-grid,
       .scope-grid,
       .process-grid,
       .faq-grid {
@@ -1767,17 +1992,8 @@
         padding: 25px 19px;
       }
 
-      .voice-card {
-        grid-template-columns: 1fr;
-      }
-
       .voice-image {
-        min-height: 260px;
-        max-height: 430px;
-      }
-
-      .voice-copy {
-        padding: 22px;
+        min-height: 250px;
       }
 
       .price-card {
@@ -1797,8 +2013,13 @@
         text-align: left;
       }
 
-      .profile-media img {
-        aspect-ratio: 4 / 5;
+      .starter-box {
+        grid-template-columns: 1fr;
+        padding: 22px;
+      }
+
+      .starter-price {
+        min-width: 0;
       }
 
       .profile-data {
@@ -1878,6 +2099,7 @@
     }
   </style>
 
+  <!-- サービス構造化データ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1924,6 +2146,7 @@
   }
   </script>
 
+  <!-- FAQ構造化データ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -1947,10 +2170,18 @@
       },
       {
         "@type": "Question",
-        "name": "LINE相談は無制限ですか？",
+        "name": "テキスト相談は無制限ですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "無期限、無制限、即時回答ではありません。契約期間内に、契約範囲に関する相談へ原則2営業日以内を目安に回答します。"
+          "text": "無期限、無制限、即時回答ではありません。契約期間中、契約範囲に関する相談へ原則2営業日以内を目安に返信します。内容によっては次回面談で整理します。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "パースは料金に含まれますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "契約内容に応じ、方向性確認のための簡易イメージを使用する場合があります。高精細パース、複数案、追加アングルは別料金です。"
         }
       },
       {
@@ -1967,18 +2198,24 @@
 </head>
 
 <body>
-  <a class="skip" href="#main">本文へ移動</a>
+  <a class="skip" href="#main">
+    本文へ移動
+  </a>
 
   <header class="header">
     <div class="container header-inner">
-      <a class="brand-link" href="#top" aria-label="ページ上部へ戻る">
+      <a
+        class="brand-link"
+        href="#top"
+        aria-label="ページ上部へ戻る"
+      >
         <strong>BETTER HOME DESIGN</strong>
         <small>家づくりトータル伴走サポート</small>
       </a>
 
       <nav class="nav" aria-label="メインナビゲーション">
         <a href="#support">サポート内容</a>
-        <a href="#examples">提案例</a>
+        <a href="#schedule">12週間の流れ</a>
         <a href="#deliverables">成果物</a>
         <a href="#price">料金</a>
         <a href="#profile">担当者</a>
@@ -1998,9 +2235,16 @@
     </div>
   </header>
 
-  <div id="transition-banner" class="transition-banner" hidden>
+  <!-- 相談実施済みの方だけ表示 -->
+  <div
+    id="transition-banner"
+    class="transition-banner"
+    hidden
+  >
     <div class="container transition-inner">
-      <span class="transition-label">相談後の方へ</span>
+      <span class="transition-label">
+        相談後の方へ
+      </span>
 
       <p>
         セカンドオピニオンで整理した内容を引き継ぎ、
@@ -2010,6 +2254,7 @@
   </div>
 
   <main id="main">
+    <!-- Hero -->
     <section id="top" class="hero">
       <div class="container hero-grid">
         <div>
@@ -2020,8 +2265,10 @@
           <h1>
             家づくりの迷いを、<br>
             一人で抱えない。
+
             <em>
-              間取り・収納・家具・内装・電気図まで、12週間一緒に整えます。
+              間取り・収納・家具・内装・電気図まで、
+              12週間一緒に整えます。
             </em>
           </h1>
 
@@ -2030,7 +2277,8 @@
             コンセント、家具など、家づくりの選択は続きます。
 
             <strong>
-              バラバラに決めるのではなく、暮らしと好みを軸に、
+              それぞれを別々に決めるのではなく、
+              ご家族の暮らしと好みを軸に、
               家全体を一つの方向へつなげるサポートです。
             </strong>
           </p>
@@ -2044,17 +2292,20 @@
               data-service="家づくりトータル伴走サポート 220,000円"
               data-location="hero"
             >
-              サポート対象になるか確認する
+              現在の状況で対応可能か確認する
             </a>
 
-            <a class="button outline" href="#examples">
+            <a
+              class="button outline"
+              href="#examples"
+            >
               実際の提案例を見る
             </a>
           </div>
 
           <p class="button-note">
             フォーム送信だけでは契約・決済になりません。
-            資料確認後に対応可否をご案内します。
+            資料と決定期限を確認後、対応可否をご案内します。
           </p>
 
           <ul class="hero-meta">
@@ -2068,7 +2319,7 @@
         <div class="hero-visual">
           <figure class="hero-image">
             <img
-              src="assets/work-scene.jpg?v=1"
+              src="assets/work-scene.jpg?v=2"
               alt="資料を確認しながら家づくりの提案を行う建築士・漆間絵美"
               width="900"
               height="1200"
@@ -2077,7 +2328,10 @@
             >
           </figure>
 
-          <aside class="hero-card" aria-label="サービス料金">
+          <aside
+            class="hero-card"
+            aria-label="サービス料金"
+          >
             <small>12-WEEK SUPPORT</small>
 
             <h2>
@@ -2085,7 +2339,9 @@
               伴走サポート
             </h2>
 
-            <p class="hero-price">220,000円（税込）</p>
+            <p class="hero-price">
+              220,000円（税込）
+            </p>
 
             <p>
               1住戸・オンライン面談5回・基本期間12週間
@@ -2095,7 +2351,11 @@
       </div>
     </section>
 
-    <section class="trust" aria-label="サービスの特徴">
+    <!-- Trust -->
+    <section
+      class="trust"
+      aria-label="サービスの特徴"
+    >
       <div class="container">
         <ul class="trust-list">
           <li>
@@ -2121,27 +2381,59 @@
       </div>
     </section>
 
+    <!-- 安心案内 -->
+    <section class="safety">
+      <div class="container">
+        <div class="safety-box">
+          <span class="safety-label">
+            安心
+          </span>
+
+          <div class="safety-copy">
+            <h2>
+              フォームを送っただけで、
+              220,000円の契約にはなりません
+            </h2>
+
+            <p>
+              現在の進捗やご希望を確認し、
+              このサポートが適している場合のみご案内します。
+              家全体の伴走が不要な場合は、単発相談をご案内します。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 悩み -->
     <section id="concerns" class="concerns">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">YOUR CONCERNS</span>
+          <span class="eyebrow">
+            YOUR CONCERNS
+          </span>
 
           <h2>
-            間取りの不安が整理できても、<br>
-            家づくりの判断はまだ続きます
+            家づくりが進むほど、<br>
+            判断がバラバラになっていませんか？
           </h2>
 
           <p>
-            間取り、収納、家具、内装、照明、電気図。
-            それぞれの選択が影響し合うため、一部分だけでは
-            完成後の暮らしまで判断しにくいことがあります。
+            一つひとつは好きな選択でも、
+            間取り、内装、照明、家具を合わせたときに、
+            暮らしやすく心地よい空間になるとは限りません。
           </p>
         </div>
 
         <div class="card-grid">
           <article class="card">
             <span class="card-number">01</span>
-            <h3>修正した間取りを、もう一度確認してほしい</h3>
+
+            <h3>
+              修正した間取りを、
+              もう一度確認してほしい
+            </h3>
+
             <p>
               建築会社から修正案が出たものの、
               本当に改善されたのか判断しにくい。
@@ -2150,43 +2442,69 @@
 
           <article class="card">
             <span class="card-number">02</span>
-            <h3>収納と家具まで考えると迷いが増える</h3>
+
+            <h3>
+              収納と家具まで考えると
+              迷いが増える
+            </h3>
+
             <p>
-              図面上の広さだけでなく、収納物や家具配置後の
-              通路まで確認したい。
+              図面上の広さだけでなく、
+              家具配置後の通路や使い方まで確認したい。
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">03</span>
-            <h3>床・建具・キッチンがまとまらない</h3>
+
+            <h3>
+              床・建具・キッチンが
+              まとまらない
+            </h3>
+
             <p>
-              一つずつは好きでも、家全体として
-              統一感が出る組み合わせか分からない。
+              一つずつは好きでも、
+              家全体として統一感が出るか分からない。
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">04</span>
-            <h3>照明とコンセントの決定が不安</h3>
+
+            <h3>
+              照明とコンセントの
+              決定が不安
+            </h3>
+
             <p>
-              家具や生活動線を具体化できないまま、
-              電気図の期限が近づいている。
+              家具や生活動線が曖昧なまま、
+              電気図の決定期限が近づいている。
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">05</span>
-            <h3>夫婦で優先順位がまとまらない</h3>
+
+            <h3>
+              ご夫婦で優先順位が
+              まとまらない
+            </h3>
+
             <p>
-              どちらかの希望を我慢させるのではなく、
+              どちらかが我慢するのではなく、
               家全体のバランスから整理したい。
+            </
             </p>
           </article>
 
           <article class="card">
             <span class="card-number">06</span>
-            <h3>建築会社への伝え方が分からない</h3>
+
+            <h3>
+              建築会社への伝え方が
+              分からない
+            </h3>
+
             <p>
               感覚的な希望や不安を、
               回答してもらえる具体的な質問に変えたい。
@@ -2196,11 +2514,14 @@
       </div>
     </section>
 
+    <!-- 得られる状態 -->
     <section id="support" class="promise">
       <div class="container">
         <div class="promise-box">
           <div class="promise-copy">
-            <span class="eyebrow">WHAT YOU RECEIVE</span>
+            <span class="eyebrow">
+              WHAT YOU RECEIVE
+            </span>
 
             <h2>
               売っているのは、<br>
@@ -2218,21 +2539,47 @@
           </div>
 
           <ul class="promise-list">
-            <li>修正を優先する場所と、活かせる場所が分かる</li>
-            <li>家具を置いた後の動線・広さを確認できる</li>
-            <li>内装・照明・家具の方向性が一つにつながる</li>
-            <li>建築会社へ確認する内容を具体化できる</li>
-            <li>決定済み・未決定の項目を振り返れる</li>
-            <li>完成後の「もっと考えておけば」を減らせる</li>
+            <li>
+              修正を優先する場所と、
+              現在案を活かせる場所が分かる
+            </li>
+
+            <li>
+              家具を置いた後の動線や
+              実際に使える広さを確認できる
+            </li>
+
+            <li>
+              内装・照明・家具の方向性が
+              一つにつながる
+            </li>
+
+            <li>
+              建築会社へ確認する内容を
+              具体的な質問にできる
+            </li>
+
+            <li>
+              決定済み・未決定の項目を
+              振り返れる
+            </li>
+
+            <li>
+              完成後の「もっと考えておけばよかった」を
+              減らせる
+            </li>
           </ul>
         </div>
       </div>
     </section>
 
+    <!-- 提案例 -->
     <section id="examples" class="proof">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">ACTUAL SUPPORT EXAMPLES</span>
+          <span class="eyebrow">
+            ACTUAL SUPPORT EXAMPLES
+          </span>
 
           <h2>
             話して終わりではなく、<br>
@@ -2241,7 +2588,7 @@
 
           <p>
             図面への具体的なコメント、収納計画、
-            改善案、完成イメージなど、
+            改善の方向性、完成イメージなどを、
             建築会社との打ち合わせに使える形へ整理します。
           </p>
         </div>
@@ -2249,8 +2596,8 @@
         <div class="proof-feature">
           <article class="proof-main">
             <img
-              src="assets/floorplan-proposal.png?v=1"
-              alt="間取りの改善提案プランの例"
+              src="assets/floorplan-proposal.png?v=2"
+              alt="間取りの改善方針をまとめた提案プランの例"
               width="1920"
               height="1080"
               loading="lazy"
@@ -2260,20 +2607,22 @@
             <div class="proof-caption">
               <small>FLOOR PLAN PROPOSAL</small>
 
-              <h3>間取りの改善方針を、図面と要点で整理</h3>
+              <h3>
+                改善の目的を、図面と要点で整理
+              </h3>
 
               <p>
-                動線、収納、階段、LDKの開放感など、
-                変更の目的が伝わる形でまとめます。
+                動線、収納、家具配置、LDKの使い方など、
+                何を目的に見直すのかが伝わる形でまとめます。
               </p>
             </div>
           </article>
 
           <article class="proof-side">
             <img
-              src="assets/floorplan-review.jpg?v=1"
-              alt="図面へ赤字で改善点を書き込んだ間取り確認例"
-              width="1024"
+              src="assets/floorplan-review.jpg?v=2"
+              alt="動線や収納、家具配置について図面へコメントした確認例"
+              width="1100"
               height="900"
               loading="lazy"
               decoding="async"
@@ -2282,10 +2631,12 @@
             <div class="proof-caption">
               <small>PLAN REVIEW</small>
 
-              <h3>現在案へ具体的にコメント</h3>
+              <h3>
+                現在の間取りへ具体的にコメント
+              </h3>
 
               <p>
-                収納位置、視線、家具配置などを
+                収納位置、通路、視線、家具との関係を
                 図面上で確認します。
               </p>
             </div>
@@ -2295,10 +2646,10 @@
         <div class="proof-grid">
           <article>
             <img
-              src="assets/storage-review.jpg?v=1"
-              alt="収納物と使う場所を整理した収納計画資料"
-              width="768"
-              height="1024"
+              src="assets/storage-review.jpg?v=2"
+              alt="収納物と使用場所を整理した収納計画資料"
+              width="716"
+              height="1021"
               loading="lazy"
               decoding="async"
             >
@@ -2306,19 +2657,22 @@
             <div class="proof-caption">
               <small>STORAGE PLANNING</small>
 
-              <h3>収納量だけでなく、使う場所から考える</h3>
+              <h3>
+                収納量だけでなく、
+                使う場所から考える
+              </h3>
 
               <p>
                 食品、日用品、衣類など、
-                何をどこへ収納するかまで整理します。
+                何をどこで使い、どこへ戻すのかを整理します。
               </p>
             </div>
           </article>
 
           <article>
             <img
-              src="assets/render-04.jpg?v=1"
-              alt="家具配置と窓、照明を確認するための室内CGパース"
+              src="assets/render-01.jpg?v=2"
+              alt="家具配置と生活動線を検討したLDKのCGイメージ"
               width="1024"
               height="576"
               loading="lazy"
@@ -2328,11 +2682,13 @@
             <div class="proof-caption">
               <small>VISUALIZATION</small>
 
-              <h3>図面だけでは見えない完成形を確認</h3>
+              <h3>
+                図面だけでは見えにくい関係を確認
+              </h3>
 
               <p>
-                家具、窓、照明、素材の関係を
-                CGパースで視覚化します。
+                家具、窓、照明、素材の組み合わせを
+                検討用イメージで確認します。
               </p>
             </div>
           </article>
@@ -2340,15 +2696,19 @@
 
         <p class="section-note">
           ※掲載例はサポート内容の一例です。
-          実際の成果物は、ご契約範囲と現在の進捗に応じて異なります。
+          実際の成果物は、ご契約範囲、
+          現在の進捗、建築会社の決定期限に応じて異なります。
         </p>
       </div>
     </section>
 
+    <!-- コーディネート例 -->
     <section class="renders">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">COORDINATION EXAMPLES</span>
+          <span class="eyebrow">
+            COORDINATION EXAMPLES
+          </span>
 
           <h2>
             内装・照明・家具まで、<br>
@@ -2356,112 +2716,74 @@
           </h2>
 
           <p>
-            パースはきれいな画像をつくるためだけのものではありません。
-            仕上げや家具を決める前に、選択の組み合わせを確認するために使います。
+            CGイメージは、きれいな画像を作るためだけのものではありません。
+            仕上げや家具を決める前に、
+            選択同士の相性を確認するために使用します。
           </p>
         </div>
 
         <div class="render-grid">
           <figure class="render-card">
             <img
-              src="assets/render-08.png?v=1"
-              alt="ピアノとダイニングのあるLDKのCGパース"
+              src="assets/render-08.png?v=2"
+              alt="家具と照明、壁面デザインを含むLDKのCGイメージ"
               width="1920"
               height="1080"
               loading="lazy"
               decoding="async"
             >
+
             <figcaption class="render-label">
               家具・照明・壁面デザインを含むLDK提案
             </figcaption>
           </figure>
 
-                   <figure class="render-card">
+          <figure class="render-card">
             <img
-              src="assets/render-02.jpg?v=1"
-              alt="明るい木目でまとめたダイニングとリビングのCGパース"
-              width="1024"
-              height="576"
+              src="assets/render-02.jpg?v=2"
+              alt="明るい木目でまとめたダイニングとリビングのCGイメージ"
+              width="576"
+              height="1024"
               loading="lazy"
               decoding="async"
             >
+
             <figcaption class="render-label">
-              明るい木目を基調としたLDKコーディネート
+              明るい木目を基調とした空間の方向性
             </figcaption>
           </figure>
 
           <figure class="render-card">
             <img
-              src="assets/render-03.jpg?v=1"
-              alt="テレビとダイニングを配置したLDKのCGパース"
+              src="assets/render-09.png?v=2"
+              alt="キッチンからダイニングとリビングを見渡したCGイメージ"
               width="1024"
               height="576"
               loading="lazy"
               decoding="async"
             >
-            <figcaption class="render-label">
-              家具配置と生活動線を確認するLDK提案
-            </figcaption>
-          </figure>
 
-          <figure class="render-card">
-            <img
-              src="assets/render-06.jpg?v=1"
-              alt="グレーのキッチンとダイニングを組み合わせたCGパース"
-              width="1024"
-              height="576"
-              loading="lazy"
-              decoding="async"
-            >
             <figcaption class="render-label">
-              キッチン・照明・家具の素材バランス
-            </figcaption>
-          </figure>
-
-          <figure class="render-card">
-            <img
-              src="assets/render-07.jpg?v=1"
-              alt="ペンダント照明とダイニングを組み合わせたCGパース"
-              width="1024"
-              height="576"
-              loading="lazy"
-              decoding="async"
-            >
-            <figcaption class="render-label">
-              照明の位置とダイニングレイアウト
-            </figcaption>
-          </figure>
-
-          <figure class="render-card">
-            <img
-              src="assets/render-09.png?v=1"
-              alt="キッチンからダイニングとリビングを見渡したCGパース"
-              width="1024"
-              height="576"
-              loading="lazy"
-              decoding="async"
-            >
-            <figcaption class="render-label">
-              キッチンから見た空間全体のつながり
+              キッチンから見た家具と空間全体のつながり
             </figcaption>
           </figure>
         </div>
 
         <p class="section-note">
-          ※CGパースは検討用のイメージです。
-          実際の色、質感、寸法、見え方を保証するものではありません。
+          ※CGイメージは方向性を確認するための検討資料です。
+          実際の色、質感、寸法、明るさ、完成状態を
+          保証するものではありません。
         </p>
       </div>
     </section>
 
-    <!-- ====================================================
-         12週間の進行
-         ==================================================== -->
-
+    <!-- 12週間の進行 -->
     <section id="schedule" class="schedule">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">12-WEEK SUPPORT</span>
+          <span class="eyebrow">
+            12-WEEK SUPPORT
+          </span>
 
           <h2>
             基本期間12週間で、<br>
@@ -2477,9 +2799,13 @@
 
         <div class="schedule-grid">
           <article class="schedule-card">
-            <span class="schedule-period">1〜3週目</span>
+            <span class="schedule-period">
+              1〜3週目
+            </span>
 
-            <h3>暮らしと間取り</h3>
+            <h3>
+              暮らしと間取り
+            </h3>
 
             <p>
               ご要望、生活習慣、家具、収納物を確認し、
@@ -2495,9 +2821,13 @@
           </article>
 
           <article class="schedule-card">
-            <span class="schedule-period">4〜6週目</span>
+            <span class="schedule-period">
+              4〜6週目
+            </span>
 
-            <h3>内装と設備</h3>
+            <h3>
+              内装と設備
+            </h3>
 
             <p>
               床、壁、建具、キッチンなどを、
@@ -2513,13 +2843,17 @@
           </article>
 
           <article class="schedule-card">
-            <span class="schedule-period">7〜9週目</span>
+            <span class="schedule-period">
+              7〜9週目
+            </span>
 
-            <h3>照明と電気図</h3>
+            <h3>
+              照明と電気図
+            </h3>
 
             <p>
               家具配置と生活動線をもとに、
-              照明やコンセントを確認します。
+              照明、スイッチ、コンセントを確認します。
             </p>
 
             <ul>
@@ -2531,9 +2865,13 @@
           </article>
 
           <article class="schedule-card">
-            <span class="schedule-period">10〜12週目</span>
+            <span class="schedule-period">
+              10〜12週目
+            </span>
 
-            <h3>全体の最終確認</h3>
+            <h3>
+              全体の最終確認
+            </h3>
 
             <p>
               間取り、内装、電気図、家具のつながりを
@@ -2557,14 +2895,13 @@
       </div>
     </section>
 
-    <!-- ====================================================
-         成果物
-         ==================================================== -->
-
+    <!-- 面談と成果物 -->
     <section id="deliverables" class="deliverables">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">MEETINGS &amp; DELIVERABLES</span>
+          <span class="eyebrow">
+            MEETINGS &amp; DELIVERABLES
+          </span>
 
           <h2>
             相談回数と成果物を、<br>
@@ -2574,7 +2911,7 @@
           <p>
             「3か月相談できます」だけでは、
             何を受け取れるのか分かりません。
-            面談の回数と、標準的な成果物を明示します。
+            面談回数と標準的な成果物を明示します。
           </p>
         </div>
 
@@ -2594,11 +2931,25 @@
             </p>
 
             <div class="meeting-list">
-              <div>1回目｜暮らし・要望のヒアリング</div>
-              <div>2回目｜間取り・収納・家具配置</div>
-              <div>3回目｜内装の方向性</div>
-              <div>4回目｜照明・電気図</div>
-              <div>5回目｜家全体の最終確認</div>
+              <div>
+                1回目｜暮らし・要望のヒアリング
+              </div>
+
+              <div>
+                2回目｜間取り・収納・家具配置
+              </div>
+
+              <div>
+                3回目｜内装の方向性
+              </div>
+
+              <div>
+                4回目｜照明・電気図
+              </div>
+
+              <div>
+                5回目｜家全体の最終確認
+              </div>
             </div>
           </article>
 
@@ -2606,32 +2957,38 @@
             <article class="deliverable-card">
               <span>DELIVERABLE 01</span>
 
-              <h3>暮らしと要望の整理シート</h3>
+              <h3>
+                暮らしと要望の整理
+              </h3>
 
               <p>
                 ご家族が大切にしたいことと、
-                優先順位を整理します。
+                判断の優先順位を整理します。
               </p>
             </article>
 
             <article class="deliverable-card">
               <span>DELIVERABLE 02</span>
 
-              <h3>間取り確認資料</h3>
+              <h3>
+                間取り確認資料
+              </h3>
 
               <p>
                 動線、収納、家具配置、
-                見直す場所をまとめます。
+                見直す場所と活かせる場所をまとめます。
               </p>
             </article>
 
             <article class="deliverable-card">
               <span>DELIVERABLE 03</span>
 
-              <h3>家具配置案</h3>
+              <h3>
+                家具配置の検討資料
+              </h3>
 
               <p>
-                家具の大きさや通路を、
+                家具の寸法や通路を、
                 間取りと合わせて確認します。
               </p>
             </article>
@@ -2639,7 +2996,9 @@
             <article class="deliverable-card">
               <span>DELIVERABLE 04</span>
 
-              <h3>内装方向性資料</h3>
+              <h3>
+                内装方向性資料
+              </h3>
 
               <p>
                 床、壁、建具、設備の
@@ -2650,7 +3009,9 @@
             <article class="deliverable-card">
               <span>DELIVERABLE 05</span>
 
-              <h3>電気図チェック資料</h3>
+              <h3>
+                電気図チェック資料
+              </h3>
 
               <p>
                 照明、スイッチ、コンセントの
@@ -2661,32 +3022,139 @@
             <article class="deliverable-card">
               <span>DELIVERABLE 06</span>
 
-              <h3>最終判断シート</h3>
+              <h3>
+                最終判断の整理
+              </h3>
 
               <p>
-                決定済み、未決定、建築会社へ
-                確認する項目を整理します。
+                決定済み、未決定、
+                建築会社へ確認する項目を整理します。
               </p>
             </article>
           </div>
         </div>
 
         <p class="section-note">
-          標準範囲は、基本図面1案・1住戸です。
-          大幅な設計変更、複数案の作成、
-          対象範囲の追加は別途お見積りとなる場合があります。
+          ※成果物の名称、形式、点数は、
+          ご相談内容や建築スケジュールに応じて異なります。
+          契約前に予定する成果物と範囲をご案内します。
         </p>
       </div>
     </section>
 
-    <!-- ====================================================
-         お客様の声
-         ==================================================== -->
+    <!-- 確認回数と連絡ルール -->
+    <section id="limits" class="limits">
+      <div class="container">
+        <div class="limits-box">
+          <div class="limits-head">
+            <span class="eyebrow">
+              SUPPORT RULES
+            </span>
 
+            <h2>
+              12週間、一定の品質で伴走するためのルール
+            </h2>
+
+            <p>
+              回数や対応方法を曖昧にしないことで、
+              お客様にも安心してご相談いただける状態をつくります。
+            </p>
+          </div>
+
+          <div class="limits-grid">
+            <div class="limit-item">
+              <strong>
+                オンライン面談
+              </strong>
+
+              <span>
+                合計5回・各回60〜75分が標準です。
+              </span>
+            </div>
+
+            <div class="limit-item">
+              <strong>
+                間取りの確認
+              </strong>
+
+              <span>
+                現在の基本図面1案を対象とし、
+                修正版の確認を含めて基本2回までです。
+              </span>
+            </div>
+
+            <div class="limit-item">
+              <strong>
+                内装方向性
+              </strong>
+
+              <span>
+                LDKを中心とした基本方向1案と、
+                契約範囲内の軽微な修正1回が標準です。
+              </span>
+            </div>
+
+            <div class="limit-item">
+              <strong>
+                電気図の確認
+              </strong>
+
+              <span>
+                建築会社から提示された基本図面1案を確認します。
+              </span>
+            </div>
+
+            <div class="limit-item">
+              <strong>
+                検討用イメージ
+              </strong>
+
+              <span>
+                必要に応じて簡易イメージを使用します。
+                高精細パースや複数案は含みません。
+              </span>
+            </div>
+
+            <div class="limit-item">
+              <strong>
+                追加対応
+              </strong>
+
+              <span>
+                6回目以降の面談、大幅な再提案、
+                対象空間の追加は事前見積りです。
+              </span>
+            </div>
+          </div>
+
+          <div class="text-rule">
+            <strong>
+              テキスト相談について
+            </strong>
+
+            契約期間中、契約範囲に関するご質問へ、
+            原則として平日に確認し、
+            2営業日以内を目安に返信します。
+            内容によっては、正確に整理するため
+            次回面談でまとめて回答します。
+            即日・緊急対応、無期限・無制限の相談ではありません。
+          </div>
+        </div>
+
+        <p class="section-note">
+          ※具体的な回数・範囲は、資料と進捗を確認したうえで
+          契約書またはご案内書面に記載します。
+        </p>
+      </div>
+    </section>
+
+    <!-- お客様の声 -->
     <section id="voices" class="voices">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">CLIENT VOICES</span>
+          <span class="eyebrow">
+            CLIENT VOICES
+          </span>
 
           <h2>
             自分たちだけでは気づけなかった視点が、<br>
@@ -2703,10 +3171,10 @@
           <article class="voice-card">
             <div class="voice-image">
               <img
-                src="assets/voice-04.png?v=1"
+                src="assets/voice-04.png?v=2"
                 alt="間取りや家具、照明について相談したお客様の感想"
                 width="768"
-                height="1024"
+                height="946"
                 loading="lazy"
                 decoding="async"
               >
@@ -2716,13 +3184,15 @@
               <small>VOICE 01</small>
 
               <h3>
-                素人では気づけない視点からの提案がありました
+                素人では気づけない視点からの
+                提案がありました
               </h3>
 
               <blockquote>
                 「間取りや家具、照明の配置に迷っていて、
                 自分の選択に自信がありませんでした。
-                アドバイスをいただき、納得できる形に変更できました。
+                アドバイスをいただき、
+                納得できる形に変更できました。
                 素人では気づけない視点からの提案もあり、
                 とても勉強になりました」
               </blockquote>
@@ -2737,10 +3207,10 @@
           <article class="voice-card">
             <div class="voice-image">
               <img
-                src="assets/voice-03.jpg?v=1"
-                alt="家づくり相談を多くの方へすすめたいというお客様の感想"
+                src="assets/voice-03.jpg?v=2"
+                alt="家づくりの判断について相談したお客様の感想"
                 width="1024"
-                height="576"
+                height="541"
                 loading="lazy"
                 decoding="async"
               >
@@ -2750,13 +3220,16 @@
               <small>VOICE 02</small>
 
               <h3>
-                知識と経験による提案が、大きな支えになりました
+                知識と経験による提案が、
+                大きな支えになりました
               </h3>
 
               <blockquote>
                 「家づくりは決めるべき点が多く、
-                限られた空間、予算、時間の中で迷うことが多いです。
-                迷ったときに知識と経験で適切に提案していただけることが、
+                限られた空間、予算、時間の中で
+                迷うことが多いです。
+                迷ったときに知識と経験で
+                適切に提案していただけることが、
                 家づくりの大きなサポートになると思います」
               </blockquote>
 
@@ -2770,14 +3243,105 @@
       </div>
     </section>
 
-    <!-- ====================================================
-         料金
-         ==================================================== -->
+    <!-- 向いている方 -->
+    <section id="fit" class="fit">
+      <div class="container">
+        <div class="heading">
+          <span class="eyebrow">
+            SERVICE FIT
+          </span>
 
+          <h2>
+            このサポートが向いている方と、<br>
+            別の方法が適している方
+          </h2>
+
+          <p>
+            すべての方に220,000円のプランが必要なわけではありません。
+            現在の状況に合う方法を選ぶことが、
+            納得できる家づくりへの近道です。
+          </p>
+        </div>
+
+        <div class="fit-grid">
+          <article class="fit-box good">
+            <h3>
+              トータル伴走が向いている方
+            </h3>
+
+            <ul class="fit-list">
+              <li>
+                間取りから内装・電気図まで
+                一貫して確認してほしい
+              </li>
+
+              <li>
+                建築会社の決定期限が続き、
+                自分たちだけでは整理しきれない
+              </li>
+
+              <li>
+                収納・家具・照明を
+                間取りと一緒に考えたい
+              </li>
+
+              <li>
+                ご夫婦の希望や優先順位を整理したい
+              </li>
+
+              <li>
+                建築会社への質問を具体化したい
+              </li>
+            </ul>
+          </article>
+
+          <article class="fit-box other">
+            <h3>
+              別のサービスが適している方
+            </h3>
+
+            <ul class="fit-list">
+              <li>
+                現在の間取りだけを
+                一度確認してほしい
+              </li>
+
+              <li>
+                法規・構造・施工可否の
+                確定判断を依頼したい
+              </li>
+
+              <li>
+                間取りをゼロから全面設計してほしい
+              </li>
+
+              <li>
+                現場監理や建築会社との交渉を
+                代行してほしい
+              </li>
+
+              <li>
+                即日・無制限の対応を希望している
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="section-note">
+          間取りだけを一度確認したい方には、
+          33,000円（税込）の
+          「建築士の間取りセカンドオピニオン」をご案内します。
+        </p>
+      </div>
+    </section>
+
+    <!-- 料金 -->
     <section id="price" class="pricing">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">MAIN SUPPORT PLAN</span>
+          <span class="eyebrow">
+            MAIN SUPPORT PLAN
+          </span>
 
           <h2>
             間取りから電気図まで、<br>
@@ -2786,7 +3350,7 @@
 
           <p>
             価格差の小さい複数プランで迷わせるのではなく、
-            家づくり全体の伴走が必要な方へ
+            家づくり全体の伴走が必要な方へ、
             一つのプランを明確にご案内します。
           </p>
         </div>
@@ -2794,7 +3358,9 @@
         <article class="price-card">
           <div class="price-head">
             <div>
-              <span class="plan-badge">月2組を目安に受付</span>
+              <span class="plan-badge">
+                月2組を目安に受付
+              </span>
 
               <h3>
                 家づくりトータル<br>
@@ -2812,7 +3378,8 @@
             <ul class="price-list">
               <li>基本期間12週間</li>
               <li>オンライン面談5回</li>
-              <li>現在の間取り図1案を確認</li>
+              <li>現在の基本間取り図1案を確認</li>
+              <li>修正版を含む間取り確認・基本2回まで</li>
               <li>動線・収納・家具配置の整理</li>
               <li>LDKを中心とした内装方向性提案</li>
             </ul>
@@ -2822,7 +3389,8 @@
               <li>契約期間中のテキスト相談</li>
               <li>建築会社への確認事項整理</li>
               <li>段階ごとの判断資料</li>
-              <li>最終判断シート</li>
+              <li>最終判断の整理</li>
+              <li>全国オンライン対応</li>
             </ul>
           </div>
 
@@ -2840,182 +3408,154 @@
 
             <p>
               フォーム送信だけでは料金は発生しません。
-              資料と決定期限を確認後、対応可否をご案内します。
+              資料、決定期限、希望内容を確認後、
+              対応可否と契約条件をご案内します。
             </p>
           </div>
         </article>
 
         <p class="capacity">
-          一件ごとの図面とご要望を丁寧に確認するため、
-          <strong>月2組を目安</strong>に受け付けています。
+          一件ごとの図面とご要望を継続して確認するため、
+          <strong>新規受付は月2組を目安</strong>としています。
           満枠の場合は、開始可能な時期をご案内します。
         </p>
       </div>
     </section>
 
-    <!-- ====================================================
-         セカンドオピニオンからの移行
-         ==================================================== -->
-
-    <section id="upgrade" class="upgrade">
+    <!-- 相談実施済みの方だけ表示する移行制度 -->
+    <section
+      id="upgrade"
+      class="upgrade"
+      hidden
+    >
       <div class="container">
         <div class="upgrade-box">
           <div class="upgrade-price">
             <small>SECOND OPINION TRANSFER</small>
 
-            <strong>22,000円を充当</strong>
+            <strong>
+              22,000円を充当
+            </strong>
 
             <p>
               セカンドオピニオン実施後、
-              7日以内のお申し込みが対象
+              7日以内のお申し込みが対象です。
             </p>
           </div>
 
           <div class="upgrade-copy">
-            <span class="eyebrow">FOR EXISTING CLIENTS</span>
+            <span class="eyebrow">
+              FOR EXISTING CLIENTS
+            </span>
 
             <h2>
-              33,000円の相談後も、<br>
-              家づくり全体を継続して見てほしい方へ
+              間取り相談で整理した内容を、<br>
+              継続サポートへ引き継げます
             </h2>
 
             <p>
-              間取りセカンドオピニオンで整理した内容を引き継ぎ、
-              トータルサポートへ移行できます。
+              セカンドオピニオンで確認したご要望や論点を引き継ぎ、
+              トータル伴走サポートへ移行できます。
 
-              単発相談ですでに提供した成果物の費用をすべて値引きするのではなく、
-              <strong>情報の引継ぎ分として22,000円を充当</strong>します。
+              単発相談ですでに提供した成果物の費用を
+              全額値引きするのではなく、
+              <strong>
+                情報の引継ぎ分として22,000円を充当
+              </strong>
+              します。
             </p>
 
             <ul>
-              <li>トータルサポートへの追加支払額：198,000円（税込）</li>
-              <li>単発相談との合計支払額：231,000円（税込）</li>
-              <li>対応枠と建築スケジュールの確認が必要です</li>
-              <li>自動的な移行ではなく、別契約となります</li>
+              <li>
+                トータル伴走への追加支払額：
+                198,000円（税込）
+              </li>
+
+              <li>
+                セカンドオピニオンとの合計支払額：
+                231,000円（税込）
+              </li>
+
+              <li>
+                対応枠と建築スケジュールの確認が必要です
+              </li>
+
+              <li>
+                自動移行ではなく、別途契約となります
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ====================================================
-         別の選択肢
-         ==================================================== -->
-
-    <section id="alternatives" class="alternatives">
+    <!-- 小さく始める選択肢 -->
+    <section class="starter">
       <div class="container">
-        <div class="heading">
-          <span class="eyebrow">OTHER OPTIONS</span>
+        <div class="starter-box">
+          <div class="starter-copy">
+            <span class="eyebrow">
+              START WITH A REVIEW
+            </span>
 
-          <h2>
-            家全体の伴走が必要ない場合は、<br>
-            必要な範囲だけ選べます
-          </h2>
-
-          <p>
-            すべての方へ220,000円のプランを
-            おすすめするわけではありません。
-            現在の悩みと進捗に合うサービスをご案内します。
-          </p>
-        </div>
-
-        <div class="alternative-grid">
-          <article class="alternative-card">
-            <small>ONE-TIME REVIEW</small>
-
-            <h3>間取りセカンドオピニオン</h3>
-
-            <p class="alternative-price">33,000円（税込）</p>
+            <h2>
+              まず現在の間取りだけ、<br>
+              一度確認したい方へ
+            </h2>
 
             <p>
-              今の間取りで優先して確認する場所と、
-              そのまま活かせる場所を整理する単発相談です。
-            </p>
+              家づくり全体の伴走が必要か判断できない場合は、
+              33,000円（税込）の単発相談から始められます。
 
-            <ul>
-              <li>事前図面確認</li>
-              <li>オンライン相談75分</li>
-              <li>判断整理シート</li>
-            </ul>
+              現在案の見直す場所、活かせる場所、
+              建築会社へ確認することを整理します。
+            </p>
+          </div>
+
+          <div class="starter-price">
+            <small>
+              間取りセカンドオピニオン
+            </small>
+
+            <strong>
+              33,000円（税込）
+            </strong>
 
             <a
-              class="text-link"
-              href="../madori-consulting/"
+              class="button light js-madori"
+              href="../madori-consulting/?utm_source=total_support&amp;utm_medium=referral&amp;utm_campaign=service_downsell&amp;utm_content=starter_section"
+              data-location="starter_section"
             >
-              間取り相談の詳細を見る →
+              間取り相談を見る
             </a>
-          </article>
-
-          <article class="alternative-card">
-            <small>AFTER SECOND OPINION</small>
-
-            <h3>間取りフォローアップ</h3>
-
-            <p class="alternative-price">追加55,000円（税込）</p>
-
-            <p>
-              セカンドオピニオンをご利用いただいた方限定で、
-              修正後の間取り確定まで追加4週間サポートします。
-            </p>
-
-            <ul>
-              <li>オンライン面談1回</li>
-              <li>修正図面の確認2回まで</li>
-              <li>契約期間中のテキスト相談</li>
-            </ul>
-          </article>
-
-          <article class="alternative-card">
-            <small>LDK INTERIOR</small>
-
-            <h3>LDK内装方向性サポート</h3>
-
-            <p class="alternative-price">77,000円（税込）</p>
-
-            <p>
-              LDKの配色、素材、家具配置と、
-              完成イメージの方向性を整理します。
-            </p>
-
-            <ul>
-              <li>オンライン面談2回</li>
-              <li>簡易パース2カット</li>
-              <li>カラースキーム1案</li>
-              <li>標準修正1回</li>
-            </ul>
-          </article>
+          </div>
         </div>
-
-        <p class="section-note">
-          ※LDK内装方向性サポートに、
-          全室コーディネート、詳細な品番選定、
-          電気図確認、商品購入代行は含まれません。
-        </p>
       </div>
     </section>
 
-    <!-- ====================================================
-         プロフィール
-         ==================================================== -->
-
+    <!-- プロフィール -->
     <section id="profile" class="profile">
       <div class="container">
         <div class="profile-box">
           <div class="profile-media">
             <img
-              src="assets/profile-emi-uruma.jpg?v=1"
+              src="assets/profile-emi-uruma.jpg?v=2"
               alt="タブレットで間取り図を確認する二級建築士・漆間絵美"
-              width="768"
-              height="1024"
+              width="900"
+              height="1125"
               loading="lazy"
               decoding="async"
             >
           </div>
 
           <div class="profile-copy">
-            <span class="eyebrow">ARCHITECT PROFILE</span>
+            <span class="eyebrow">
+              ARCHITECT PROFILE
+            </span>
 
-            <h2>漆間 絵美</h2>
+            <h2>
+              漆間 絵美
+            </h2>
 
             <p class="kana">
               うるま えみ｜二級建築士
@@ -3030,7 +3570,7 @@
               ハウスメーカーや住宅会社で、
               新築・リノベーション設計を合計800棟以上経験。
 
-              住宅設計とインテリアコーディネートの両方から、
+              住宅設計とインテリアコーディネートの両面から、
               間取り、収納、家具、内装、照明を
               横断して確認してきました。
             </p>
@@ -3053,27 +3593,33 @@
               <dd>二級建築士</dd>
 
               <dt>経験</dt>
-              <dd>新築・リノベーション設計 合計800棟以上</dd>
+              <dd>
+                新築・リノベーション設計
+                合計800棟以上
+              </dd>
 
               <dt>専門領域</dt>
-              <dd>住宅設計・間取り・収納・インテリア</dd>
+              <dd>
+                住宅設計・間取り・収納・インテリア
+              </dd>
 
               <dt>対応方法</dt>
-              <dd>オンライン・日本全国</dd>
+              <dd>
+                オンライン・日本全国
+              </dd>
             </dl>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ====================================================
-         対応範囲
-         ==================================================== -->
-
+    <!-- 対応範囲 -->
     <section id="scope" class="scope">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">SERVICE SCOPE</span>
+          <span class="eyebrow">
+            SERVICE SCOPE
+          </span>
 
           <h2>
             料金に含まれることと、<br>
@@ -3082,62 +3628,129 @@
 
           <p>
             対応範囲を明確にすることは、
-            制限のためではありません。
+            ご依頼を断るためではありません。
             12週間、一定の品質でサポートするための約束です。
           </p>
         </div>
 
         <div class="scope-grid">
           <article class="scope-box included">
-            <h3>料金に含まれること</h3>
+            <h3>
+              基本料金に含まれること
+            </h3>
 
             <ul class="scope-list">
-              <li>1住戸・基本期間12週間</li>
-              <li>オンライン面談5回・各60〜75分</li>
-              <li>現在の基本間取り図1案の確認</li>
-              <li>動線・収納・家具配置の整理</li>
-              <li>LDKを中心とした内装方向性提案</li>
-              <li>電気図1案の確認</li>
-              <li>契約範囲内のテキスト相談</li>
-              <li>建築会社への質問・確認事項整理</li>
-              <li>契約範囲内の判断資料作成</li>
+              <li>
+                1住戸・基本期間12週間
+              </li>
+
+              <li>
+                オンライン面談5回・各60〜75分
+              </li>
+
+              <li>
+                現在の基本間取り図1案の確認
+              </li>
+
+              <li>
+                修正版を含む間取り確認・基本2回まで
+              </li>
+
+              <li>
+                動線・収納・家具配置の整理
+              </li>
+
+              <li>
+                LDKを中心とした内装方向性提案
+              </li>
+
+              <li>
+                電気図1案の確認
+              </li>
+
+              <li>
+                契約範囲内のテキスト相談
+              </li>
+
+              <li>
+                建築会社への質問・確認事項整理
+              </li>
+
+              <li>
+                契約範囲内の判断資料作成
+              </li>
             </ul>
           </article>
 
           <article class="scope-box excluded">
-            <h3>料金に含まれないこと</h3>
+            <h3>
+              基本料金に含まれないこと
+            </h3>
 
             <ul class="scope-list">
-              <li>間取りの全面的な新規設計</li>
-              <li>複数案の間取り作成</li>
-              <li>高精細パースの追加制作</li>
-              <li>全室の詳細な品番選定</li>
-              <li>家具・照明・商品の購入代行</li>
-              <li>ショールーム・現地への同行</li>
-              <li>建築会社との打ち合わせ同席</li>
-              <li>建築確認申請・実施設計</li>
-              <li>構造・法規・施工可否の確定判断</li>
-              <li>12週間を超える延長対応</li>
+              <li>
+                間取りの全面的な新規設計
+              </li>
+
+              <li>
+                複数案の間取り作成・比較提案
+              </li>
+
+              <li>
+                高精細パース・追加アングルの制作
+              </li>
+
+              <li>
+                全室の詳細な商品・品番選定
+              </li>
+
+              <li>
+                家具・照明・商品の購入代行
+              </li>
+
+              <li>
+                造作家具の実施設計・製作図作成
+              </li>
+
+              <li>
+                ショールーム・現地への同行
+              </li>
+
+              <li>
+                建築会社との打ち合わせ同席・交渉代行
+              </li>
+
+              <li>
+                建築確認申請・実施設計・施工管理
+              </li>
+
+              <li>
+                構造・法規・施工可否の確定判断
+              </li>
+
+              <li>
+                12週間を超える延長対応
+              </li>
             </ul>
           </article>
         </div>
 
         <p class="section-note">
           大幅なプラン変更、6回目以降の面談、
-          対象空間の追加などは、対応可能な場合に限り
-          内容と料金を事前にご案内します。
+          対象空間の追加、追加資料の制作などは、
+          対応可能な場合に限り、
+          作業前に内容と料金をご案内します。
         </p>
       </div>
     </section>
 
-    <!-- ====================================================
-         申込みの流れ
-         ==================================================== -->
-
+    <!-- 申込みの流れ -->
     <section id="process" class="process">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">APPLICATION PROCESS</span>
+          <span class="eyebrow">
+            APPLICATION PROCESS
+          </span>
 
           <h2>
             フォーム送信から、<br>
@@ -3147,13 +3760,15 @@
           <p>
             フォーム送信だけで契約になることはありません。
             現在の資料と決定期限を確認してから、
-            サポート内容をご案内します。
+            対応範囲をご案内します。
           </p>
         </div>
 
         <div class="process-grid">
           <article class="process-card">
-            <h3>事前相談フォームを送信</h3>
+            <h3>
+              事前相談フォームを送信
+            </h3>
 
             <p>
               現在の進捗、困っていること、
@@ -3162,7 +3777,9 @@
           </article>
 
           <article class="process-card">
-            <h3>図面・資料を確認</h3>
+            <h3>
+              図面・資料を確認
+            </h3>
 
             <p>
               間取り図や仕様資料を確認し、
@@ -3171,25 +3788,31 @@
           </article>
 
           <article class="process-card">
-            <h3>対応範囲をご案内</h3>
+            <h3>
+              対応可否をご案内
+            </h3>
 
             <p>
-              開始時期、期間、成果物、
-              修正範囲をご案内します。
+              現在の進捗と希望内容をもとに、
+              適したサービスをご案内します。
             </p>
           </article>
 
           <article class="process-card">
-            <h3>契約条件の確認</h3>
+            <h3>
+              契約範囲を確認
+            </h3>
 
             <p>
-              サービス内容と料金をご確認いただき、
-              不明点を整理します。
+              開始時期、期間、面談回数、
+              成果物、修正範囲をご確認いただきます。
             </p>
           </article>
 
           <article class="process-card">
-            <h3>ご契約・お支払い</h3>
+            <h3>
+              ご契約・お支払い
+            </h3>
 
             <p>
               内容への同意と決済完了をもって、
@@ -3198,42 +3821,50 @@
           </article>
 
           <article class="process-card">
-            <h3>サポート開始</h3>
+            <h3>
+              サポート開始
+            </h3>
 
             <p>
               初回ヒアリングを行い、
-              優先順位と進行予定を決めます。
+              優先順位と12週間の進行予定を整えます。
             </p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ====================================================
-         FAQ
-         ==================================================== -->
-
+    <!-- FAQ -->
     <section id="faq" class="faq">
       <div class="container">
         <div class="heading">
-          <span class="eyebrow">FAQ</span>
+          <span class="eyebrow">
+            FAQ
+          </span>
 
-          <h2>よくある質問</h2>
+          <h2>
+            よくある質問
+          </h2>
         </div>
 
         <div class="faq-grid">
           <details>
             <summary>
-              33,000円の間取り相談を受けないと申し込めませんか？
+              33,000円の間取り相談を受けないと
+              申し込めませんか？
             </summary>
 
             <p>
               必須ではありません。
-              家づくり全体の伴走を希望されている場合は、
-              トータルサポートへ直接ご相談いただけます。
+              家づくり全体の伴走が必要な場合は、
+              トータル伴走サポートへ直接ご相談いただけます。
 
-              まず現在の間取りだけ確認したい方は、
-              <a href="../madori-consulting/">
+              まず現在の間取りだけを確認したい方は、
+              <a
+                class="js-madori"
+                href="../madori-consulting/?utm_source=total_support&amp;utm_medium=referral&amp;utm_campaign=service_downsell&amp;utm_content=faq"
+                data-location="faq"
+              >
                 間取りセカンドオピニオン
               </a>
               が適しています。
@@ -3242,26 +3873,33 @@
 
           <details>
             <summary>
-              相談すると220,000円の契約を勧められますか？
+              フォームを送ると、
+              220,000円の契約を勧められますか？
             </summary>
 
             <p>
-              フォーム送信や資料確認だけで契約になることはありません。
-              トータルサポートが不要な場合は、
-              単発相談や建築会社への確認をご案内します。
+              フォーム送信や資料確認だけで
+              契約になることはありません。
+
+              家全体の伴走が不要な場合は、
+              単発相談や建築会社への確認を
+              ご案内することがあります。
             </p>
           </details>
 
           <details>
             <summary>
-              187,000円のプランはありますか？
+              サポート料金には何が含まれますか？
             </summary>
 
             <p>
-              現在は提供していません。
-              価格差が小さい複数プランを並べるのではなく、
-              間取り・内装・電気図・家具配置を一貫して確認する
-              220,000円のプランへ統一しています。
+              基本期間12週間、オンライン面談5回、
+              基本間取り図1案の確認、
+              収納・家具配置・内装方向性・電気図の確認、
+              契約範囲内のテキスト相談、
+              判断資料の作成を含みます。
+
+              詳細な範囲は、契約前に書面でご案内します。
             </p>
           </details>
 
@@ -3286,6 +3924,9 @@
               標準で5回です。
               各回60〜75分を目安とし、
               間取り、内装、電気図などの段階に合わせて実施します。
+
+              6回目以降は、対応可能な場合に
+              追加料金をご案内します。
             </p>
           </details>
 
@@ -3296,8 +3937,12 @@
 
             <p>
               無期限・無制限・即時回答ではありません。
-              契約期間中、契約範囲に関するご質問へ
-              原則2営業日以内を目安に返信します。
+              契約期間中、契約範囲に関するご質問へ、
+              原則として平日に確認し、
+              2営業日以内を目安に返信します。
+
+              内容によっては、
+              次回面談でまとめて整理します。
             </p>
           </details>
 
@@ -3309,33 +3954,72 @@
             <p>
               本サービスは、建築会社から提示された
               基本図面の確認と改善方針の整理が中心です。
-              実施設計や複数案の新規作成は含みません。
+
+              間取りの全面的な新規設計、
+              実施設計、複数案の作成は
+              基本料金に含みません。
             </p>
           </details>
 
           <details>
             <summary>
-              パースは料金に含まれますか？
+              間取りは何回確認してもらえますか？
             </summary>
 
             <p>
-              契約内容に応じて、方向性確認のための
-              簡易イメージを使用する場合があります。
+              現在の基本図面1案を対象とし、
+              建築会社から届いた修正版を含め、
+              基本2回までの確認を標準としています。
 
-              高精細パース、複数案、追加アングルの制作は、
-              原則として別料金です。
+              全面的な変更や追加確認が必要な場合は、
+              作業前に対応可否と追加料金をご案内します。
             </p>
           </details>
 
           <details>
             <summary>
-              ハウスメーカーが決まっていても相談できますか？
+              CGパースは料金に含まれますか？
+            </summary>
+
+            <p>
+              契約内容に応じて、
+              方向性確認のための簡易イメージを
+              使用する場合があります。
+
+              高精細パース、複数案、
+              追加アングル、繰り返しの修正制作は
+              基本料金に含みません。
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              全室の壁紙や照明器具を
+              選んでもらえますか？
+            </summary>
+
+            <p>
+              基本料金では、LDKを中心に
+              家全体の方向性と整合性を確認します。
+
+              全室の詳細な品番選定、
+              大量の商品比較、購入リストの作成は
+              基本料金に含みません。
+              必要な場合は、範囲を確認してご案内します。
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              ハウスメーカーが決まっていても
+              相談できますか？
             </summary>
 
             <p>
               ご相談いただけます。
               建築会社の提案を否定するのではなく、
-              ご家族の希望と照らして確認事項を整理します。
+              ご家族の希望や暮らし方と照らして
+              確認事項を整理します。
             </p>
           </details>
 
@@ -3345,9 +4029,11 @@
             </summary>
 
             <p>
-              原則として、建築会社との連絡や交渉は
-              お客様ご自身に行っていただきます。
-              そのための質問文や確認事項を整理します。
+              原則として、建築会社との連絡、交渉、
+              打ち合わせはお客様ご自身に行っていただきます。
+
+              建築会社へ伝えやすい質問文や
+              確認事項の整理をサポートします。
             </p>
           </details>
 
@@ -3357,9 +4043,46 @@
             </summary>
 
             <p>
-              法規適合、構造、施工可否、性能の
+              図面から読み取れる一般的な論点は整理できますが、
+              法規適合、構造、性能、施工可否の
               確定判断や保証は行いません。
-              最終判断は、設計・施工を担当する建築会社へご確認ください。
+
+              最終判断は、設計・施工を担当する
+              建築会社や各専門家へご確認ください。
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              途中で大幅に間取りが変わった場合は
+              どうなりますか？
+            </summary>
+
+            <p>
+              契約範囲内で確認できる変更は対応します。
+
+              全面的な変更により、
+              間取り、家具、内装、電気図の再提案が
+              必要になった場合は、
+              作業前に追加料金または契約変更をご案内します。
+            </p>
+          </details>
+
+          <details>
+            <summary>
+              セカンドオピニオンから移行する場合、
+              相談料は充当されますか？
+            </summary>
+
+            <p>
+              セカンドオピニオン実施後7日以内に
+              お申し込みいただき、
+              対応枠と建築スケジュールが適合する場合は、
+              情報の引継ぎ分として22,000円を充当します。
+
+              追加支払額は198,000円（税込）、
+              セカンドオピニオンとの合計支払額は
+              231,000円（税込）です。
             </p>
           </details>
 
@@ -3377,35 +4100,22 @@
 
           <details>
             <summary>
-              途中で大幅に間取りが変わった場合はどうなりますか？
-            </summary>
-
-            <p>
-              契約範囲内で確認できる変更は対応します。
-              全面的な変更により再提案が必要な場合は、
-              作業前に追加料金または契約変更をご案内します。
-            </p>
-          </details>
-
-          <details>
-            <summary>
               キャンセルや途中解約はできますか？
             </summary>
 
             <p>
-              着手前・着手後・成果物作成後などの段階に応じた条件を、
+              着手前、着手後、面談実施後、
+              成果物作成後などの段階に応じた条件を、
               利用規約と契約書に記載します。
-              契約前に必ずご確認ください。
+
+              契約前に必ず内容をご確認いただきます。
             </p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ====================================================
-         最終CTA
-         ==================================================== -->
-
+    <!-- 最終CTA -->
     <section class="final">
       <div class="reading">
         <h2>
@@ -3414,11 +4124,12 @@
         </h2>
 
         <p>
-          間取り、内装、照明、家具を
+          間取り、収納、内装、照明、家具を
           別々に決めるのではなく、
           ご家族の暮らしを軸に一つの方向へ整えます。
 
-          まずは現在の進捗と決定期限を確認します。
+          まずは現在の進捗、図面、
+          建築会社の決定期限を確認します。
         </p>
 
         <div class="button-row">
@@ -3430,12 +4141,13 @@
             data-service="家づくりトータル伴走サポート 220,000円"
             data-location="final"
           >
-            サポート対象になるか確認する
+            現在の状況で対応可能か確認する
           </a>
 
           <a
-            class="button accent"
-            href="../madori-consulting/"
+            class="button accent js-madori"
+            href="../madori-consulting/?utm_source=total_support&amp;utm_medium=referral&amp;utm_campaign=service_downsell&amp;utm_content=final"
+            data-location="final"
           >
             まず間取りだけ相談する
           </a>
@@ -3443,16 +4155,14 @@
 
         <p class="final-note">
           フォーム送信だけでは契約・決済になりません。
-          資料確認後に、対応可否と適したサービスをご案内します。
+          資料確認後に、対応可否と
+          現在の状況に適したサービスをご案内します。
         </p>
       </div>
     </section>
   </main>
 
-  <!-- ======================================================
-       フッター
-       ====================================================== -->
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container footer-inner">
       <div>
@@ -3465,7 +4175,8 @@
         </div>
 
         <p class="copyright">
-          © <span id="year">2026</span> BETTER HOME DESIGN
+          © <span id="year">2026</span>
+          BETTER HOME DESIGN
         </p>
       </div>
 
@@ -3473,7 +4184,11 @@
         class="footer-links"
         aria-label="フッターナビゲーション"
       >
-        <a href="../madori-consulting/">
+        <a
+          class="js-madori"
+          href="../madori-consulting/?utm_source=total_support&amp;utm_medium=referral&amp;utm_campaign=service_downsell&amp;utm_content=footer"
+          data-location="footer"
+        >
           間取りセカンドオピニオン
         </a>
 
@@ -3496,10 +4211,7 @@
     </div>
   </footer>
 
-  <!-- ======================================================
-       スマートフォン固定CTA
-       ====================================================== -->
-
+  <!-- スマートフォン固定CTA -->
   <div
     id="fixed-cta"
     class="fixed-cta hidden"
@@ -3516,80 +4228,128 @@
     </a>
   </div>
 
-  <!-- ======================================================
-       JavaScript
-       ====================================================== -->
-
+  <!-- JavaScript -->
   <script>
     (function () {
       "use strict";
 
+      /*
+       * Googleフォーム・アクセス解析設定
+       *
+       * Googleフォームの事前入力用entry IDを取得したら、
+       * entryIds内の空欄へ設定してください。
+       */
       var CONFIG = {
         formUrl:
           "https://docs.google.com/forms/d/e/1FAIpQLSfwHAEz814Wfhx7QtvR4c41MqkekJnHuchxvstEC2dI5xHuzw/viewform",
 
         analyticsMode: "none",
 
-        analyticsEvent: "total_support_apply_click",
+        analyticsEvent:
+          "total_support_apply_click",
 
         entryIds: {
           source: "",
           ctaLocation: "",
           requestedService: "",
-          customerStage: ""
+          customerStage: "",
+          referralId: ""
         }
       };
 
-      var params = new URLSearchParams(window.location.search);
+      var params =
+        new URLSearchParams(
+          window.location.search
+        );
 
-      var source = sanitizeTrackingValue(
-        params.get("utm_source") ||
-        params.get("source") ||
-        ""
-      );
+      var source =
+        sanitizeTrackingValue(
+          params.get("utm_source") ||
+          params.get("source") ||
+          ""
+        );
 
-      var customerStage = sanitizeTrackingValue(
-        params.get("customer_stage") ||
-        params.get("stage") ||
-        ""
-      );
+      var customerStage =
+        sanitizeTrackingValue(
+          params.get("customer_stage") ||
+          params.get("stage") ||
+          ""
+        );
 
-      var cameFromMadori =
-        customerStage === "after_second_opinion" ||
-        source === "madori_consulting" ||
-        document.referrer.indexOf("/madori-consulting/") !== -1;
+      var referralId =
+        sanitizeTrackingValue(
+          params.get("ref") || ""
+        );
 
-      showTransitionBanner();
+      /*
+       * セカンドオピニオン実施済み判定
+       *
+       * 流入元やリファラーだけでは判定しません。
+       * customer_stageが明示的に
+       * after_second_opinionの場合のみ、
+       * 相談実施済みとして扱います。
+       */
+      var isAfterSecondOpinion =
+        customerStage ===
+        "after_second_opinion";
+
+      var effectiveCustomerStage =
+        customerStage ||
+        "general_visitor";
+
+      showAfterConsultationContent();
       updateApplicationLinks();
-      bindTracking();
+      updateMadoriLinks();
+      bindApplicationTracking();
+      bindMadoriTracking();
       setupMobileFixedCta();
       updateCopyrightYear();
 
       /*
-       * セカンドオピニオンLPからリンクする場合は、
-       * 次のURLを使うと専用バナーが表示されます。
-       *
-       * https://emy-renovation.github.io/total-support/
-       * ?utm_source=madori_consulting
-       * &customer_stage=after_second_opinion
+       * 相談実施済みの方にだけ、
+       * 専用バナーと移行制度を表示します。
        */
+      function showAfterConsultationContent() {
+        if (!isAfterSecondOpinion) {
+          return;
+        }
 
-      function showTransitionBanner() {
-        var banner = document.getElementById("transition-banner");
+        var banner =
+          document.getElementById(
+            "transition-banner"
+          );
 
-        if (banner && cameFromMadori) {
+        var upgrade =
+          document.getElementById(
+            "upgrade"
+          );
+
+        if (banner) {
           banner.hidden = false;
+        }
+
+        if (upgrade) {
+          upgrade.hidden = false;
         }
       }
 
+      /*
+       * トータル伴走サポートの
+       * 申込フォームURLを設定します。
+       */
       function updateApplicationLinks() {
-        var links = document.querySelectorAll(".js-apply");
+        var links =
+          document.querySelectorAll(
+            ".js-apply"
+          );
 
         links.forEach(function (link) {
           var url;
 
           try {
-            url = new URL(CONFIG.formUrl);
+            url = new URL(
+              CONFIG.formUrl
+            );
           } catch (error) {
             console.error(
               "申込フォームURLが正しくありません。",
@@ -3599,31 +4359,29 @@
             return;
           }
 
-          var ctaLocation = sanitizeTrackingValue(
-            link.getAttribute("data-location") || "unknown"
-          );
-
-          var requestedService = sanitizeFormText(
-            link.getAttribute("data-service") ||
-            "家づくりトータル伴走サポート 220,000円"
-          );
-
-          [
-            "utm_source",
-            "utm_medium",
-            "utm_campaign",
-            "utm_content",
-            "utm_term"
-          ].forEach(function (key) {
-            var value = sanitizeTrackingValue(
-              params.get(key) || ""
+          var ctaLocation =
+            sanitizeTrackingValue(
+              link.getAttribute(
+                "data-location"
+              ) ||
+              "unknown"
             );
 
-            if (value) {
-              url.searchParams.set(key, value);
-            }
-          });
+          var requestedService =
+            sanitizeFormText(
+              link.getAttribute(
+                "data-service"
+              ) ||
+              "家づくりトータル伴走サポート 220,000円"
+            );
 
+          copyUtmParameters(url);
+
+          /*
+           * LP内で利用する識別情報です。
+           * Googleフォームの設問へ事前入力するには、
+           * entryIdsも設定してください。
+           */
           url.searchParams.set(
             "requested_service",
             requestedService
@@ -3636,22 +4394,21 @@
 
           url.searchParams.set(
             "customer_stage",
-            customerStage ||
-            (
-              cameFromMadori
-                ? "after_second_opinion"
-                : "general_visitor"
-            )
+            effectiveCustomerStage
           );
+
+          if (referralId) {
+            url.searchParams.set(
+              "ref",
+              referralId
+            );
+          }
 
           setFormEntry(
             url,
             CONFIG.entryIds.source,
-            source || (
-              cameFromMadori
-                ? "madori_consulting"
-                : "total_support_page"
-            )
+            source ||
+            "total_support_page"
           );
 
           setFormEntry(
@@ -3669,24 +4426,134 @@
           setFormEntry(
             url,
             CONFIG.entryIds.customerStage,
-            customerStage ||
-            (
-              cameFromMadori
-                ? "after_second_opinion"
-                : "general_visitor"
-            )
+            effectiveCustomerStage
           );
 
-          link.href = url.toString();
+          setFormEntry(
+            url,
+            CONFIG.entryIds.referralId,
+            referralId
+          );
+
+          link.href =
+            url.toString();
         });
       }
 
-      function setFormEntry(url, entryId, value) {
-        if (!entryId || !value) {
+      /*
+       * 間取りセカンドオピニオンへのリンクへ、
+       * 参照IDがある場合のみ引き継ぎます。
+       */
+      function updateMadoriLinks() {
+        var links =
+          document.querySelectorAll(
+            ".js-madori"
+          );
+
+        links.forEach(function (link) {
+          var url;
+
+          try {
+            url = new URL(
+              link.getAttribute("href"),
+              window.location.href
+            );
+          } catch (error) {
+            console.error(
+              "間取り相談ページのURLが正しくありません。",
+              error
+            );
+
+            return;
+          }
+
+          var ctaLocation =
+            sanitizeTrackingValue(
+              link.getAttribute(
+                "data-location"
+              ) ||
+              "unknown"
+            );
+
+          url.searchParams.set(
+            "utm_source",
+            "total_support"
+          );
+
+          url.searchParams.set(
+            "utm_medium",
+            "referral"
+          );
+
+          url.searchParams.set(
+            "utm_campaign",
+            "service_downsell"
+          );
+
+          url.searchParams.set(
+            "utm_content",
+            ctaLocation
+          );
+
+          if (referralId) {
+            url.searchParams.set(
+              "ref",
+              referralId
+            );
+          }
+
+          link.href =
+            url.toString();
+        });
+      }
+
+      /*
+       * 現在のLPへ付いているUTMパラメータを
+       * Googleフォームへ引き継ぎます。
+       */
+      function copyUtmParameters(url) {
+        [
+          "utm_source",
+          "utm_medium",
+          "utm_campaign",
+          "utm_content",
+          "utm_term"
+        ].forEach(function (key) {
+          var value =
+            sanitizeTrackingValue(
+              params.get(key) || ""
+            );
+
+          if (value) {
+            url.searchParams.set(
+              key,
+              value
+            );
+          }
+        });
+      }
+
+      /*
+       * Googleフォームのentry IDが
+       * 設定されている場合のみ事前入力します。
+       */
+      function setFormEntry(
+        url,
+        entryId,
+        value
+      ) {
+        if (
+          !entryId ||
+          !value
+        ) {
           return;
         }
 
-        if (!/^entry\.\d+$/.test(entryId)) {
+        if (
+          !/^entry\.\d+$/.test(
+            entryId
+          )
+        ) {
           console.warn(
             "Googleフォームのentry IDが正しくありません：",
             entryId
@@ -3695,71 +4562,159 @@
           return;
         }
 
-        url.searchParams.set(entryId, value);
+        url.searchParams.set(
+          entryId,
+          value
+        );
       }
 
-      function bindTracking() {
-        var links = document.querySelectorAll(".js-apply");
+      /*
+       * トータル伴走CTAのクリック計測
+       */
+      function bindApplicationTracking() {
+        var links =
+          document.querySelectorAll(
+            ".js-apply"
+          );
 
         links.forEach(function (link) {
-          link.addEventListener("click", function () {
-            var eventData = {
-              cta_location: sanitizeTrackingValue(
-                link.getAttribute("data-location") || "unknown"
-              ),
-
-              requested_service: sanitizeFormText(
-                link.getAttribute("data-service") ||
-                "家づくりトータル伴走サポート 220,000円"
-              ),
-
-              customer_stage:
-                customerStage ||
-                (
-                  cameFromMadori
-                    ? "after_second_opinion"
-                    : "general_visitor"
-                ),
-
-              traffic_source:
-                source ||
-                (
-                  cameFromMadori
-                    ? "madori_consulting"
-                    : "direct"
-                )
-            };
-
-            if (
-              CONFIG.analyticsMode === "gtag" &&
-              typeof window.gtag === "function"
-            ) {
-              window.gtag(
-                "event",
+          link.addEventListener(
+            "click",
+            function () {
+              sendEvent(
                 CONFIG.analyticsEvent,
-                eventData
+                {
+                  cta_location:
+                    sanitizeTrackingValue(
+                      link.getAttribute(
+                        "data-location"
+                      ) ||
+                      "unknown"
+                    ),
+
+                  requested_service:
+                    sanitizeFormText(
+                      link.getAttribute(
+                        "data-service"
+                      ) ||
+                      "家づくりトータル伴走サポート 220,000円"
+                    ),
+
+                  customer_stage:
+                    effectiveCustomerStage,
+
+                  traffic_source:
+                    source ||
+                    "direct"
+                }
               );
             }
-
-            if (CONFIG.analyticsMode === "gtm") {
-              window.dataLayer = window.dataLayer || [];
-
-              window.dataLayer.push({
-                event: CONFIG.analyticsEvent,
-                cta_location: eventData.cta_location,
-                requested_service: eventData.requested_service,
-                customer_stage: eventData.customer_stage,
-                traffic_source: eventData.traffic_source
-              });
-            }
-          });
+          );
         });
       }
 
+      /*
+       * 33,000円相談への移動を計測します。
+       */
+      function bindMadoriTracking() {
+        var links =
+          document.querySelectorAll(
+            ".js-madori"
+          );
+
+        links.forEach(function (link) {
+          link.addEventListener(
+            "click",
+            function () {
+              sendEvent(
+                "second_opinion_link_click",
+                {
+                  cta_location:
+                    sanitizeTrackingValue(
+                      link.getAttribute(
+                        "data-location"
+                      ) ||
+                      "unknown"
+                    ),
+
+                  requested_service:
+                    "間取りセカンドオピニオン33000円",
+
+                  customer_stage:
+                    effectiveCustomerStage,
+
+                  traffic_source:
+                    source ||
+                    "direct"
+                }
+              );
+            }
+          );
+        });
+      }
+
+      /*
+       * CTAクリックイベントを送信します。
+       *
+       * analyticsModeがnoneの間は、
+       * 外部へデータを送信しません。
+       */
+      function sendEvent(
+        eventName,
+        eventData
+      ) {
+        if (
+          CONFIG.analyticsMode ===
+            "gtag" &&
+          typeof window.gtag ===
+            "function"
+        ) {
+          window.gtag(
+            "event",
+            eventName,
+            eventData
+          );
+        }
+
+        if (
+          CONFIG.analyticsMode ===
+          "gtm"
+        ) {
+          window.dataLayer =
+            window.dataLayer || [];
+
+          window.dataLayer.push(
+            Object.assign(
+              {
+                event: eventName
+              },
+              eventData
+            )
+          );
+        }
+      }
+
+      /*
+       * スマートフォン固定CTA
+       *
+       * Heroと最終CTAが表示されている間は、
+       * 固定ボタンを非表示にします。
+       */
       function setupMobileFixedCta() {
-        var fixedCta = document.getElementById("fixed-cta");
-        var hero = document.querySelector(".hero");
-        var finalSection = document.querySelector(".final");
+        var fixedCta =
+          document.getElementById(
+            "fixed-cta"
+          );
+
+        var hero =
+          document.querySelector(
+            ".hero"
+          );
+
+        var finalSection =
+          document.querySelector(
+            ".final"
+          );
 
         if (!fixedCta) {
           return;
@@ -3768,9 +4723,15 @@
         if (
           !hero ||
           !finalSection ||
-          !("IntersectionObserver" in window)
+          !(
+            "IntersectionObserver"
+            in window
+          )
         ) {
-          fixedCta.classList.remove("hidden");
+          fixedCta.classList.remove(
+            "hidden"
+          );
+
           return;
         }
 
@@ -3780,62 +4741,93 @@
         function updateVisibility() {
           fixedCta.classList.toggle(
             "hidden",
-            heroVisible || finalVisible
+            heroVisible ||
+            finalVisible
           );
         }
 
-        var heroObserver = new IntersectionObserver(
-          function (entries) {
-            heroVisible = entries[0].isIntersecting;
-            updateVisibility();
-          },
-          {
-            threshold: 0.08
-          }
-        );
+        var heroObserver =
+          new IntersectionObserver(
+            function (entries) {
+              heroVisible =
+                entries[0].isIntersecting;
 
-        var finalObserver = new IntersectionObserver(
-          function (entries) {
-            finalVisible = entries[0].isIntersecting;
-            updateVisibility();
-          },
-          {
-            threshold: 0.08
-          }
-        );
+              updateVisibility();
+            },
+            {
+              threshold: 0.08
+            }
+          );
+
+        var finalObserver =
+          new IntersectionObserver(
+            function (entries) {
+              finalVisible =
+                entries[0].isIntersecting;
+
+              updateVisibility();
+            },
+            {
+              threshold: 0.08
+            }
+          );
 
         heroObserver.observe(hero);
-        finalObserver.observe(finalSection);
+        finalObserver.observe(
+          finalSection
+        );
+
         updateVisibility();
       }
 
+      /*
+       * コピーライトの年を自動更新します。
+       */
       function updateCopyrightYear() {
-        var year = document.getElementById("year");
+        var year =
+          document.getElementById(
+            "year"
+          );
 
         if (year) {
-          year.textContent = String(
-            new Date().getFullYear()
-          );
+          year.textContent =
+            String(
+              new Date().getFullYear()
+            );
         }
       }
 
-      function sanitizeTrackingValue(value) {
+      /*
+       * URLから取得した計測値を
+       * 安全な文字列に整えます。
+       */
+      function sanitizeTrackingValue(
+        value
+      ) {
         return String(value || "")
           .replace(
             /[^a-zA-Z0-9_\-ぁ-んァ-ヶ一-龠]/g,
             ""
           )
-          .substring(0, 80);
+          .substring(0, 100);
       }
 
-      function sanitizeFormText(value) {
+      /*
+       * フォームへ渡す表示用テキストを
+       * 安全な文字列に整えます。
+       */
+      function sanitizeFormText(
+        value
+      ) {
         return String(value || "")
-          .replace(/[<>"'`]/g, "")
+          .replace(
+            /[<>"'`]/g,
+            ""
+          )
           .trim()
-          .substring(0, 120);
+          .substring(0, 140);
       }
     })();
   </script>
 </body>
 </html>
-
